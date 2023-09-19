@@ -7,6 +7,8 @@
 
 import Foundation
 
+/// структура для декодирования JSON ответа расписания
+
 struct Schedule: Decodable {
     let schedule: [ScheduleInformation]
 }

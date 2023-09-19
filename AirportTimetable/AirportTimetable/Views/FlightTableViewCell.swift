@@ -6,7 +6,8 @@
 //
 
 import UIKit
-
+//Класс ячейки таблицы FlightTableViewCell, которая содержит четыре метки: flightNumberLabel, flightNameLabel, planeNameLabel и timeLabel. Метка flightNumberLabel поддерживает только одну строку, а остальные метки поддерживают бесконечное количество строк. 
+//
 final class FlightTableViewCell: UITableViewCell {
 
     private lazy var flightNumberLabel: UILabel = {

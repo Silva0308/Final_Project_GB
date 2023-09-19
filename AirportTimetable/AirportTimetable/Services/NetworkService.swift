@@ -12,9 +12,9 @@ enum NetworkError: Error {
     case noData
     case decodingError
 }
-
-final class NetworkManager {
-    static let shared = NetworkManager()
+//класс для работы с сетью 
+final class NetworkService {
+    static let worker = NetworkService()
     
     private init() {}
     

@@ -7,6 +7,8 @@
 
 import Foundation
 
+/// Структура для декодирования копирайта
+
 struct Copyright: Decodable {
     let copyright: CopyrightInformation
 }

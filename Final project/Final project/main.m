@@ -14,16 +14,17 @@ int main(int argc, const char * argv[]) {
         double discriminant, x1, x2;
         
         // Ввод коэффициентов уравнения
-        printf("Введите коэффициент a: ");
+        NSLog(@"Введите коэффициент a: ");
         scanf("%lf", &a);
         
-        printf("Введите коэффициент b: ");
+        NSLog(@"Введите коэффициент b: ");
         scanf("%lf", &b);
         
-        printf("Введите коэффициент c: ");
+        NSLog(@"Введите коэффициент c: ");
         scanf("%lf", &c);
         
         // Расчет дискриминанта
+        
         discriminant = b * b - 4 * a * c;
         
         // Проверка значений дискриминанта и вывод решений
@@ -31,16 +32,13 @@ int main(int argc, const char * argv[]) {
             x1 = (-b + sqrt(discriminant)) / (2 * a);
             x2 = (-b - sqrt(discriminant)) / (2 * a);
             
-            printf("Уравнение имеет два корня:\n");
-            printf("x1 = %.2lf\n", x1);
-            printf("x2 = %.2lf\n", x2);
+            NSLog(@"Уравнение имеет два корня:\nПервый корень: %.2lf, второй корень: %.2lf\n",x1, x2);
         } else if (discriminant == 0) {
             x1 = -b / (2 * a);
             
-            printf("Уравнение имеет один корень:\n");
-            printf("x1 = %.2lf\n", x1);
+            NSLog(@"Уравнение имеет один корень:\nx = %.2lf\n", x1);
         } else {
-            printf("Уравнение не имеет действительных корней.\n");
+            NSLog(@"Уравнение не имеет действительных корней.\n");
         }
     }
     return 0;
